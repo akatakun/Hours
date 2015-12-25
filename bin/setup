@@ -3,6 +3,7 @@
 # Set up Rails app. Run this script immediately after cloning the codebase.
 # https://github.com/thoughtbot/guides/tree/master/protocol
 
+# 途中でシェルの実行に失敗すれば、実行を終了する
 # Exit if any subcommand fails
 set -e
 
@@ -14,12 +15,15 @@ if [ ! -f config/database.yml ]; then
   cp config/database.yml.example config/database.yml
 fi
 
+# rake db:create + rake db:migrate + rake db:seedを実行する
 # Set up the database
 bundle exec rake db:setup
 
+# RailsコマンドやRakeコマンドの実行スタブを生成する
 # Add binstubs to PATH via export PATH=".git/safe/../../bin:$PATH" in ~/.zshenv
 mkdir -p .git/safe
 
+# ".env"ファイルは実行時に自動的に読み込まれるため、環境変数の設定に便利
 # Set up configurable environment variables
 if [ ! -f .env ]; then
   cp .sample.env .env

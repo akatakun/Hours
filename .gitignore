@@ -12,3 +12,6 @@
 /tags
 /tmp/*
 /config/database.yml
+
+# TODO:
+/vendor/bundle

@@ -6,11 +6,18 @@ Hours
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/DefactoSoftware/Hours)
 
+Hoursは私たちが普段から時間追跡に使っている時間追跡アプリケーションをベースとしたとてもシンプルなアプリケーションです。
+ユーザたちは特定のカテゴリーでプロジェクトに費やした時間を何時間でも登録できます。
+そして、どんなタグでも好きなように追加できます。
+これらの機能により、私たちが異なるプロジェクトでどのような時間を過ごしたかをたくさんの方法で観察できます。
+
+```
 Hours is a dead simple project based time tracking application that we use
 for internal time-tracking. It allows users to register how many hours they've
 worked on a project with a certain category (think `design`, `software development`,
 `testing` for software teams) and add any tag they like to it. This gives us a lot of
 insight on how we spend our time on different projects.
+```
 
 It looks like this:
 
